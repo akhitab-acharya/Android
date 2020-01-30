@@ -1,0 +1,38 @@
+//Create an interface Games with the functions named as football, cricket and basketball, without any default implementations.
+// Now create a class named Sports which implements this interface and override all the functions while printing a corresponding message for each sport.
+
+interface Games{
+
+    fun football() {
+        println("it's a game of football.")}
+
+    fun cricket() {
+        println("It's a game of cricket.")}
+
+    fun basketball() {
+        println("It's a game of basketball.")}
+}
+
+class Sports(): Games{
+
+    override fun football() {
+        println("Football is a sport.")}
+
+    override fun cricket() {
+        println("Cricket is a sport..")}
+
+    override fun basketball() {
+        println("Basketball is a sport of.")
+    }
+
+}
+
+
+fun main(){
+
+    val sports = Sports()
+    sports.football()
+    sports.cricket()
+    sports.basketball()
+
+}
